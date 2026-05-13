@@ -13,7 +13,7 @@ from binance.exceptions import BinanceAPIException
 from core.config import config
 from core.binance_client import get_client, get_klines, get_price
 from core.risk import Position, position_size
-
+from core.strategies import get_strategy
 log = logging.getLogger(__name__)
 
 STATE_FILE = Path(__file__).resolve().parent.parent / "data" / "state.json"
