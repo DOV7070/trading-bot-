@@ -16,7 +16,7 @@ from core.risk import Position, position_size
 try:
     from core.strategies import get_strategy
 except    ModuleNotFoundError:    
-from strategies import get_strategy
+    from strategies import get_strategy
 log = logging.getLogger(__name__)
 
 STATE_FILE = Path(__file__).resolve().parent.parent / "data" / "state.json"
