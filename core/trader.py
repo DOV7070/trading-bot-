@@ -13,7 +13,7 @@ from binance.exceptions import BinanceAPIException
 from core.config import config
 from core.binance_client import get_client, get_klines, get_price
 from core.risk import Position, position_size
-from strategies import get_strategy
+from core.strategies import get_strategy
 
 log = logging.getLogger(__name__)
 
